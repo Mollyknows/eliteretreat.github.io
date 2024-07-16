@@ -4,17 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="eliteRetreatSite.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8dd7f794af.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="menu.js"></script>
     <title>Main Page</title>
   </head>
   <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
     <div class="menu">
+      <h1>Elite Retreat</h1>
+      <span class="burger"
+        ><i class="fa-solid fa-bars" onclick="openNav()"></i
+      ></span>
       <ul>
-        <li><h1>Elite Retreat</h1></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li style="float: right">
+        <li style="justify-content: flex-end">
           <a class="book" href="booking.html">Book Appointment Now</a>
         </li>
       </ul>
