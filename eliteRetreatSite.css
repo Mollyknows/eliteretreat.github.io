@@ -1,6 +1,11 @@
 /* Part of the CSS that permits responsive design. Do not change!*/
 /*for more info read the w3schools chapter at the following link:*/
 /*https://www.w3schools.com/css/css_rwd_intro.asp*/
+html,
+body {
+  min-height: 100%;
+}
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -129,9 +134,6 @@ body {
   margin-top: 20px;
 }
 
-.mainpage h2 {
-}
-
 .mainpage ul {
   list-style-type: none;
   display: flex;
@@ -157,6 +159,119 @@ body {
     top: 15px;
     right: 35px;
   }
+}
+
+.serviceMain {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.product {
+  margin: 10px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d6a9ce;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product > img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 0;
+  padding: 10px;
+}
+
+.product button {
+  border: 0px solid transparent;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #ddfdfe;
+  font-size: 18px;
+  font-family: "interregular";
+  transition-duration: 0.4s;
+}
+
+.product button:hover {
+  background-color: #ddfdfe;
+  box-shadow: 0 9px 12px 0 rgba(0, 0, 0, 0.24);
+}
+
+.product button:active {
+  background-color: #e0e1e9;
+  transition-duration: 0s;
+}
+
+.prodContent h2 {
+  font-size: 22px;
+}
+
+.product a {
+  text-decoration: none;
+  color: black;
+}
+
+.aboutMain > .col-8 {
+  padding: 0;
+}
+
+.aboutMain > .col-8 > img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutMain h1 {
+  font-size: 48px;
+  color: #ddfdfe;
+  padding: 8px;
+}
+
+.aboutMain p {
+  font-size: 18px;
+  padding: 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.aboutSidebar {
+  display: none;
+}
+
+.contactMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Section that adjusts content based on window size. Necessary for responsive design.
@@ -245,5 +360,78 @@ body {
 
   .menu .book:hover {
     background-color: #e7cee3;
+  }
+
+  .serviceMain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .product {
+    margin: 10px;
+    height: 600px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d6a9ce;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .product > img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .aboutMain > .col-8 > img {
+    display: none;
+  }
+
+  .aboutMain h1,
+  .aboutMain p {
+    padding: 0px;
+  }
+
+  .aboutMain h1 {
+    font-size: 100px;
+    font-weight: lighter;
+  }
+  .aboutMain p {
+    font-size: 32px;
+  }
+
+  .col-4 {
+    padding: 0;
+  }
+  .row.aboutMain {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .col-4.aboutSidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e4b4c2;
+  }
+
+  .aboutSidebar img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
   }
 }
