@@ -45,6 +45,7 @@ body {
 .menu {
   background-color: #ffb8d1;
   overflow: hidden;
+  z-index: 3;
 }
 
 .menu h1 {
@@ -63,7 +64,7 @@ body {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   left: 0;
   top: 0;
   background-color: #e4b4c2;
@@ -274,6 +275,26 @@ body {
   margin-right: auto;
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.form {
+  margin: auto;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #ddfdfe;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  width: 250px;
+  height: 30px;
+}
+
 /* Section that adjusts content based on window size. Necessary for responsive design.
 /* For mobile phones: */
 [class*="col-"] {
@@ -416,22 +437,35 @@ body {
   .col-4 {
     padding: 0;
   }
+
+  .body {
+    height: 100%;
+  }
   .row.aboutMain {
     height: 100%;
     min-height: 100%;
+  }
+
+  .textAbout > p {
+    margin: 40px;
   }
 
   .col-4.aboutSidebar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: space-between;
     flex-direction: column;
     background-color: #e4b4c2;
+    height: 100vh;
+  }
+
+  col-4.aboutSidebar > img {
+    display: block;
   }
 
   .aboutSidebar img {
     max-width: 100%;
     height: auto;
-    flex: 1;
   }
 }
