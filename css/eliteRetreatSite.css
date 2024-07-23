@@ -27,8 +27,8 @@ body {
 
 @font-face {
   font-family: "interregular";
-  src: url("inter-webfont.woff2") format("woff2"),
-    url("inter-webfont.woff") format("woff");
+  src: url("../fonts/inter-webfont.woff2") format("woff2"),
+    url("../fonts/inter-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -468,4 +468,102 @@ input[type="password"] {
     max-width: 100%;
     height: auto;
   }
+}
+
+.map-container {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border: 0;
+}
+/* Existing CSS rules */
+
+/* Registration Form Styles */
+.registration-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.registration-form {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="password"],
+.registration-form input[type="email"],
+.registration-form input[type="date"] {
+  width: 100%; /* Full width */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.registration-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffb8d1; /* Match your design */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registration-form input[type="submit"]:hover {
+  background-color: #e7cee3; /* Change on hover */
+}
+/* Styles for the protected page */
+.protected-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.protected-page h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.protected-page p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.protected-page .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffb8d1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.protected-page .btn:hover {
+  background-color: #e0a4b4;
 }
