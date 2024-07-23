@@ -1,4 +1,5 @@
 <?php
+include '../php/config.php';
 // Include the header file
 include 'header.php';
 ?>

@@ -1,4 +1,5 @@
 <?php
+include '../php/config.php';
 // Determine whether to show the Google Maps iframe
 $show_map = false; // Default to not show the map
 
