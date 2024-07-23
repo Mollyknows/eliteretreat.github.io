@@ -435,7 +435,7 @@ input[type="password"] {
   }
 
   .col-4 {
-    padding: 0;
+    padding-top: 10%;
   }
 
   .body {
@@ -444,10 +444,13 @@ input[type="password"] {
   .row.aboutMain {
     height: 100%;
     min-height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .textAbout > p {
     margin: 40px;
+    margin-left: 0px;
   }
 
   .col-4.aboutSidebar {
@@ -457,7 +460,7 @@ input[type="password"] {
     align-content: space-between;
     flex-direction: column;
     background-color: #e4b4c2;
-    height: 100vh;
+    min-height: 80vh;
   }
 
   col-4.aboutSidebar > img {
