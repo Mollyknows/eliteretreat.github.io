@@ -1,6 +1,8 @@
 <?php
+include '../php/config.php';
 // Include the database connection file
 include 'db_connect.php';
+//include('auth_check.php'); 
 
 // Initialize an array to hold service data
 $services = [];
@@ -26,12 +28,12 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Elite Retreat</title>
-    <link rel="stylesheet" href="eliteRetreatSite.css">
+    <link rel="stylesheet" href="../css/eliteRetreatSite.css">
     <script src="https://kit.fontawesome.com/8dd7f794af.js" crossorigin="anonymous"></script>
     <script src="../js/menu.js"></script>
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    <?php include '../php/header.php'; ?>
 
     <main>
         <div class="serviceMain">
@@ -44,7 +46,7 @@ $conn->close();
                         <h1><?php echo htmlspecialchars($service['Service_Name']); ?></h1>
                         <h2>Duration: <?php echo htmlspecialchars($service['Service_Duration']); ?></h2></br>
                         <p>Price: <?php echo htmlspecialchars($service['Service_Price']); ?></p>
-                        <button><a href="booking.html">BOOK NOW</a></button>
+                        <button><a href="booking.php?service_id=<?php echo htmlspecialchars($service['Service_ID']); ?>">BOOK NOW</a></button>
                     </div>
                 </div>
             <?php endforeach; ?>

@@ -1,4 +1,5 @@
 <?php
+include 'config.php'; // Start the session and include other configurations
 // Include the database connection and start the session
 include 'db_connect.php';
 
@@ -6,7 +7,7 @@ include 'db_connect.php';
 // Check if the user is logged in
 if (!isset($_SESSION['username'])) {
     // If not logged in, redirect to login page
-    header("Location: login.php");
+    header("Location: ../php/login.php");
     exit();
 }
 
@@ -20,9 +21,23 @@ if (!isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protected Page | Elite Retreat</title>
     <link rel="stylesheet" href="../css/eliteRetreatSite.css">
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 60vh; /* Adjust this value as needed */
+            text-align: center;
+            margin-top: 20vh; /* Adjust this value as needed */
+        }
+        main h1, main p, main a {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <?php include 'header.php'; // Include header ?>
+    <?php include '../php/header.php'; // Include header ?>
 
     <main>
         <h1>Welcome to the Protected Page</h1>
@@ -31,6 +46,6 @@ if (!isset($_SESSION['username'])) {
         <a href="logout.php">Logout</a>
     </main>
     
-    <?php include 'footer.php'; // Include footer ?>
+    <?php include '../php/footer.php'; // Include footer ?>
 </body>
 </html>

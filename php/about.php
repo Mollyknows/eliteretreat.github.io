@@ -1,4 +1,6 @@
-<?php include 'header.php'; ?>
+<?php 
+include '../php/config.php';
+include 'header.php'; ?>
 
 <div class="row aboutMain">
   <div class="col-8 textAbout">
@@ -11,7 +13,7 @@
       care and attention to detail, ensuring every client receives a
       rejuvenating experience tailored to their needs.</br>
     </p>
-    <img src="../images/spa1.webp" />
+    <img src="../images/spa1.webp" style="width: 100%; height: auto; max-width: 800px;" />
     <p>
       At Elite Retreat, we offer a range of services designed to promote
       relaxation, wellness, and healing. From therapeutic massages to
@@ -20,7 +22,7 @@
       traditional massage techniques but also in holistic approaches that
       address both physical and mental health.</br>
     </p>
-    <img src="../images/spa2.jpg" />
+    <img src="../images/spa2.jpg" style="width: 100%; height: auto; max-width: 800px;" />
     <p>
       In addition to our spa services, Elite Retreat is proud to offer
       professional physical therapy services. Whether you're recovering from
@@ -28,12 +30,12 @@
       our licensed therapists are here to support your journey to optimal
       health.</br>
     </p>
-    <img src="../images/spa3.webp" />
+    <img src="../images/spa3.webp" style="width: 100%; height: auto; max-width: 800px;" />
   </div>
   <div class="col-4 aboutSidebar">
-    <img src="../images/spa1.webp" />
-    <img src="../images/spa2.jpg" />
-    <img src="../images/spa3.webp" />
+    <img src="../images/spa1.webp" style="width: 100%; height: auto; max-width: 400px;" />
+    <img src="../images/spa2.jpg" style="width: 100%; height: auto; max-width: 400px;" />
+    <img src="../images/spa3.webp" style="width: 100%; height: auto; max-width: 400px;" />
   </div>
 </div>
 

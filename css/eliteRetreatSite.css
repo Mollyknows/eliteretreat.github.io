@@ -567,3 +567,53 @@ input[type="password"] {
 .protected-page .btn:hover {
   background-color: #e0a4b4;
 }
+
+.bookingMain {
+  text-align: center; /* Center text inside the container */
+  max-width: 900px; /* Adjust max-width as needed */
+  width: 100%;
+  margin: 20px auto; /* Center container horizontally */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.bookingMain h1, .bookingMain h2, .bookingMain p {
+  margin: 10px 0;
+}
+
+.bookingMain form {
+  margin: 20px 0;
+}
+
+.bookingMain form label, .bookingMain form select, .bookingMain form input {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 400px; /* Adjust max-width as needed */
+}
+
+iframe {
+  margin-top: 20px;
+  border: solid 1px #777;
+  width: 100%;
+  max-width: 900px; /* Adjust max-width as needed */
+  height: 600px;
+}
+@media only screen and (max-width: 768px) {
+  .bookingMain {
+      padding: 10px;
+  }
+
+  .bookingMain form {
+      margin: 10px 0;
+  }
+
+  .bookingMain form label, .bookingMain form select, .bookingMain form input {
+      max-width: 100%;
+  }
+
+  iframe {
+      height: 400px; /* Adjust height for smaller screens */
+  }
+}
